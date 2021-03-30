@@ -12,6 +12,9 @@ public class Jedi {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
+    private String mentor;
+    private StatusEnum status;
+    private Double midichlorians;
 
     public Integer getId() {
         return id;
@@ -27,5 +30,27 @@ public class Jedi {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+    public String getMentor() {
+        return mentor;
+    }
+
+    public void setMentor(String nomeMentor) {
+        this.mentor = nomeMentor;
+    }
+    public StatusEnum getStatus() {
+        return status;
+    }
+
+    public void setStatus(StatusEnum status) {
+        this.status = status;
+    }
+
+    public Double getMidichlorians() {
+        return midichlorians;
+    }
+
+    public void setMidichlorians(Double midichlorians) {
+        this.midichlorians = midichlorians;
     }
 }

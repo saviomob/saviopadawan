@@ -34,4 +34,25 @@ public class JediController {
         return new ResponseEntity(novoJedi, HttpStatus.OK);
     }
 
+
+    @GetMapping(value = "/listMasterAndNoob")
+    public ResponseEntity<Object> buscarMestreseAprendizes() {
+        List<JediDTO> jedis = service.buscarMestreseAprendizes();
+        return new ResponseEntity(jedis, HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/midichloriansAlto")
+    public ResponseEntity<Object> buscarMidichloriansAlto() {
+        List<JediDTO> jedis = service.buscarMidichloriansAlto();
+        return new ResponseEntity(jedis, HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/jedicategoria")
+    public ResponseEntity<Object> buscarJediCategoria() {
+        List<Object> jedis = service.buscaJediCategoria();
+        return new ResponseEntity(jedis, HttpStatus.OK);
+    }
+
+
+
 }
