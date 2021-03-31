@@ -1,0 +1,2 @@
+Dentro de resouces e na application.properties na primeira linha deste arquivo altera-se o server.port com a nova porta onde vai ser startado
+e assim a aplicação ja com a porta de saída modificado pode ser reiniciado e funcionar novamente depois da mudança da porta

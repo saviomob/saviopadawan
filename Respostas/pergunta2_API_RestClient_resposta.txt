@@ -1,0 +1,5 @@
+Quando executado o post com o objeto solicitado percebemos que o valor que estava na propriedade
+ "planet" e na propriedade "classe" foi recebido na prorpiedade 'planetAbreviado' e na propriedade
+ 'classeAbreviado' respectivamente, porém sofreu alteraçoes já que somente foi retornado a primeira palavra
+ que haviam em cada propriedade. Além disto percebe-se que o valor da propriedade 'ranking' é retornada
+ após executar a função 'X*124*612/divisor', sendo o X o valor que foi enviado no post.
